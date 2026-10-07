@@ -1,0 +1,84 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.progress {
+  height: 6px;
+  border-radius: 999px;
+  background: #eee;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: #111;
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.counter {
+  margin: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.primary,
+.secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #111;
+  font-weight: 600;
+}
+
+.primary {
+  background: #111;
+  color: #fff;
+}
+
+.secondary {
+  background: #fff;
+  color: #111;
+}
+
+.primary:disabled,
+.secondary:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.resultsTitle {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.results {
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.resultRow {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+
+.resultRow dt {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.resultRow dd {
+  margin: 0.15rem 0 0;
+  font-weight: 600;
+}
